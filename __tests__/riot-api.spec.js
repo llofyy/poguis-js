@@ -1,6 +1,6 @@
 import "dotenv/config";
 import RiotApi from "../lib/riot-api";
-import { riotSummoner } from "../mocks/riot-api-mock";
+import { riotSummoner } from "../mock";
 
 describe("Riot Api", () => {
   let riotApi;
