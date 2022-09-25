@@ -22,4 +22,16 @@ export default class PoguisJS {
 
     return summoner;
   }
+
+  async getSummonerByPuuid(puuid) {
+    const summoner = await this.riotApi.getSummonerByPuuid(puuid);
+
+    return summoner;
+  }
+
+  async getSummonerById(id) {
+    const summoner = await this.riotApi.getSummonerById(id);
+
+    return summoner;
+  }
 }

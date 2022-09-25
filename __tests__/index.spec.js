@@ -24,4 +24,18 @@ describe("Poguis", () => {
 
     expect(getSummonerByAccountId.id).toEqual(riotSummoner.id);
   });
+
+  it("should return summoner info by puuid", async () => {
+    const getSummonerByPuuid = await poguis.getSummonerByPuuid(
+      riotSummoner.puuid
+    );
+
+    expect(getSummonerByPuuid.id).toEqual(riotSummoner.id);
+  });
+
+  it("should return summoner info by id", async () => {
+    const getSummonerById = await poguis.getSummonerById(riotSummoner.id);
+
+    expect(getSummonerById.id).toEqual(riotSummoner.id);
+  });
 });

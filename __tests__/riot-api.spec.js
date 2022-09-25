@@ -25,5 +25,19 @@ describe("Riot Api", () => {
 
       expect(getSummonerByAccountId.id).toEqual(riotSummoner.id);
     });
+
+    it("should return summoner info by puuid", async () => {
+      const getSummonerByPuuid = await riotApi.getSummonerByPuuid(
+        riotSummoner.puuid
+      );
+
+      expect(getSummonerByPuuid.id).toEqual(riotSummoner.id);
+    });
+
+    it("should return summoner info by id", async () => {
+      const getSummonerById = await riotApi.getSummonerById(riotSummoner.id);
+
+      expect(getSummonerById.id).toEqual(riotSummoner.id);
+    });
   });
 });
