@@ -1,6 +1,6 @@
 {
   "name": "poguis.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -11,7 +11,15 @@
   "transform": {
     "\\.js$": "<rootDir>/node_modules/babel-jest"
   },
-  "keywords": [],
+  "keywords": [
+    "riot",
+    "league of legends",
+    "games",
+    "riot games",
+    "valorant",
+    "teamfight tatics",
+    "tft"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
